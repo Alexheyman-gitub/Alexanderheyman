@@ -63,13 +63,13 @@
 		</div>
 		<div class="row mt">	
 			<div class="col-lg-8 col-lg-offset-2">
-				<form role="form">
+				<form onsumbit="sendEmail(); reset(); return false;">
 				  <div class="form-group">
-				    <input type="name" class="form-control" id="NameInputEmail1" placeholder="Your Code Name ">
+				    <input type="name" class="form-control" id="NameInputEmail" placeholder="Your Code Name ">
 				    <br>
 				  </div>
 				  <div class="form-group">
-				    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Encrypted Email">
+				    <input type="email" class="form-control" id="exampleInputEmail1" placeholder=" Encrypt Email">
 				    <br>
 				  </div>
 				  <div class="form-group">
@@ -79,8 +79,28 @@
 				  <textarea class="form-control" rows="6" placeholder="Enter your text here"></textarea>
 				    <br>
 				  <button type="submit" class="btn ">Develop!</button>
-				</form>    			
+				</form>
 			</div>
+			<script> src="Include a script tag to https://smtpjs.com/v3/smtp.js" </script>
+			<script>
+				function sendEmail(){
+					Email.send({
+		    Host : "smtp.gmail.com",
+		    Username : "Alexheyman88@gmail.com",
+		    Password : "password",
+		    To : 'Alexheyman88@gmail.com',
+		    From : document. getElementById,("email").value,
+		    Subject : "New Contact Form Inquiry",
+		    Body : "Name " + Document.getElementById("name").value
+				+ "<br> Email: " + Document.getElementById("email").value
+				+ "<br> Phone no: " + Document.getElementById("phone").value
+				+ "<br> Message: " + Document.getElementById("message").value
+		}).then(
+		  message => alert("Message sent successfully")
+		);
+						}
+				
+			</Script>
 		</div><!-- /row -->
 	</div><!-- /container -->
 
@@ -100,7 +120,7 @@
 							Alex Heyman <br>
 							Location: San Francisco, CA <br>
 							Office:(415) 335-0488 <br>
-							Email:Alexheyman88@gmail.com
+							
 						</p>
 					
 				</div><!-- /col-lg-4 -->
