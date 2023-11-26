@@ -85,15 +85,18 @@
 			<script>
 				function sendEmail(){
 				Email.send({
-			    Host : "smtp.elasticemail.com",
+			    Host : "smtp.gmail.com",
 			    Username : "alexheyman88@gmail.com",
 			    Password : "336DE0D27F961DF0A896CBFE2EA14040493A",
 			    To : 'alexheyman88@gmail.com',
 			    From : Document.getElementById("Email").value,
 			    Subject : "New Contact Form Enquiry",
-			    Body : "And this is the body"
+			    Body : "Name + Documanet.getElementById("name").value
+				    + "<br> Email " + Documanet.getElementById("email").value
+				    + "<br> Phone no " + Documanet.getElementById("phone").value
+				    + "<br> Message  " + Documanet.getElementById("message").value
 			}).then(
-			  message => alert(message)
+			  message => alert("Message Sent")
 			);
 	
 				}
