@@ -76,7 +76,7 @@
 				    <input type="email" class="form-control" id="subjectEmail1" placeholder="Email">
 				    <br>
 				  </div>
-				  <textarea class="form-control" rows="6" placeholder="Enter your text here"></textarea>
+				  <textarea class="form-control" id="text" rows="6" placeholder="Enter your text here"></textarea>
 				    <br>
 				  <button type="submit" class="btn ">Develop!</button>
 				</form> 	
@@ -95,8 +95,8 @@
 			    Subject : "New Contact Form Enquiry",
 			    Body : "Name + Document.getElementById("name").value
 				    + "<br> NameInput: " + Document.getElementById("NameInput").value
-				    + "<br> emai:l:  " + Document.getElementById("email").value
-				 + "<br> Message  " + Document.getElementById("message").value
+				    + "<br> email:  " + Document.getElementById("subjectEmail1").value
+				    + "<br> Message  " + Document.getElementById("text").value
 			}).then(
 			  message => alert("Message Sent")
 			);
