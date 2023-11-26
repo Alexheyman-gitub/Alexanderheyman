@@ -64,19 +64,19 @@
 		<div class="row mt">	
 			<div class="col-lg-8 col-lg-offset-2">
 				<form onsumbit="sendEmail(); reset(); return false;">
-				  <div class="form-group">
-				    <input type="name" class="form-control" id="NameInputEmail" placeholder="Your Code First Name ">
+				  <div class="form">
+				    <input type="name" class="form" id="NameInputEmail" placeholder="Your Code First Name ">
 				    <br>
 				  </div>
-				  <div class="form-group">
-				    <input type="Last Name" class="form-control" id="Last Name " placeholder=" Your Code Last Name ">
+				  <div class="form">
+				    <input type="Last Name" class="form" id="Last Name " placeholder=" Your Code Last Name ">
 				    <br>
 				  </div>
-				  <div class="form-group">
-				    <input type="email" class="form-control" id="subject Email" placeholder="Encrypted Email">
+				  <div class="form">
+				    <input type="email" class="form" id="subject Email" placeholder="Encrypted Email">
 				    <br>
 				  </div>
-				  <textarea class="form-control" rows="6" placeholder="Enter your text here"></textarea>
+				  <textarea class="form" rows="6" placeholder="Enter your text here"></textarea>
 				    <br>
 				  <button type="submit" class="btn ">Develop!</button>
 				</form>
@@ -84,21 +84,19 @@
 			<script> src="Include a script tag to https://smtpjs.com/v3/smtp.js" </script>
 			<script>
 				function sendEmail(){
-					Email.send({
-		    Host : "smtp.gmail.com",
-		    Username : "Alexheyman88@gmail.com",
-		    Password : "336DE0D27F961DF0A896CBFE2EA14040493A",
-		    To : 'Alexheyman88@gmail.com',
-		    From : document. getElementById,("email").value,
-		    Subject : "New Contact Form Inquiry",
-		    Body : "Name " + Document.getElementById("name").value
-				+ "<br> Email: " + Document.getElementById("email").value
-				+ "<br> Phone no: " + Document.getElementById("phone").value
-				+ "<br> Message: " + Document.getElementById("message").value
-		}).then(
-		  message => alert("Message sent successfully")
-				);
-			}
+				Email.send({
+			    Host : "smtp.elasticemail.com",
+			    Username : "alexheyman88@gmail.com",
+			    Password : "336DE0D27F961DF0A896CBFE2EA14040493A",
+			    To : 'alexheyman88@gmail.com',
+			    From : Document.getElementById("Email").value,
+			    Subject : "New Contact Form Enquiry",
+			    Body : "And this is the body"
+			}).then(
+			  message => alert(message)
+			);
+	
+				}
 				
 			</Script>
 		</div><!-- /row -->
