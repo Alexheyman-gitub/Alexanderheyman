@@ -63,7 +63,7 @@
 		</div>
 		<div class="row mt">	
 			<div class="col-lg-8 col-lg-offset-2">
-				<form onsubmit= "sendEmail(); reset(); retrun false;" >
+				<form onsubmit= "sendEmail(); reset(); retrun false;">
 				  <div class="form-group">
 				    <input type="name" class="form-control" id="NameInput" placeholder="Your Code First Name ">
 				    <br>
@@ -94,9 +94,10 @@
 			    From : Document.getElementById("Email").value,
 			    Subject : "New Contact Form Enquiry",
 			    Body : "Name + Documanet.getElementById("name").value
-				    + "<br> Email " + Documanet.getElementById("email").value
-				    + "<br> Phone no " + Documanet.getElementById("phone").value
-				    + "<br> Message  " + Documanet.getElementById("message").value
+				    + "<br> NameInput " + Documanet.getElementById("NameInput").value
+				    + "<br> NameInput " + Documanet.getElementById("NameInput").value
+				    + "<br> email  " + Documanet.getElementById("email").value
+				 + "<br> Message  " + Documanet.getElementById("message").value
 			}).then(
 			  message => alert("Message Sent")
 			);
