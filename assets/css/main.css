@@ -179,7 +179,7 @@ form {
 }
 
 
-form h3{
+form h2{
 	color: #555;
 	font-weight: 800;
 	margin-bottom: 20px;
@@ -200,7 +200,23 @@ form input, form textarea{
 	
 }
 
+form button{
+	padding: 15px;
+	backgroung: #555;
+	color: #fff;
+	font-size: 18px;
+	boarder: 0;
+	outline: none;
+	cursor: pointer;
+	width: 150px;
+	margin: 200px; auto: 0;
 
+	
+	
+
+
+
+}
 
 
 
