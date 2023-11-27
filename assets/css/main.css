@@ -167,6 +167,19 @@ a:after {
 
 
 
+form {
+	background: #fff
+	display: flex;
+	flex-direction: column;
+	padding: 2vw 4vw;
+	width: 90%;
+	max-width: 600px;
+	boarder-radius: 10px;
+	
+
+	
+}
+
 
 /* +++++ WRAP SECTIONS +++++ */
 
