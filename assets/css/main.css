@@ -167,57 +167,6 @@ a:after {
 
 
 
-form {
-	background: #fff
-	display: center;
-	flex-direction: column;
-	padding: 2vw 4vw;
-	width: 90%;
-	max-width: 600px;
-	boarder-radius: 10px;
-
-}
-
-
-form h2{
-	color: #555;
-	font-weight: 800;
-	margin-bottom: 20px;
-	
-}
-
-
-
-form input, form textarea{
-	boarder: 0;
-	margin: 10px; 0;
-	padding: 20px;
-	outline: none;
-	background: #f5f5f5;
-	font-size: 16px;
-	
-
-	
-}
-
-form button{
-	padding: 15px;
-	backgroung: #555;
-	color: #fff;
-	font-size: 18px;
-	boarder: 0;
-	outline: none;
-	cursor: pointer;
-	width: 150px;
-	margin: 200px; auto: 0;
-
-	
-	
-
-
-
-}
-
 
 
 
